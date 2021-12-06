@@ -179,7 +179,7 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 166%;
     left: 0%;
-    background: url(images/sticky-bg-1-desktop.jpg);
+    background: url(sticky-bg-1-desktop.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% auto;
@@ -499,7 +499,7 @@ hr{
         position: absolute;
         font-family: poppins;
         color: var(--text-color);
-        background: url(images/sticky-bg-1.jpg);
+        background: url(sticky-bg-1.jpg);
         background-size: cover;
         left: 0%;
         right: 0%;
@@ -878,7 +878,7 @@ hr{
         position: absolute;
         font-family: poppins;
         color: var(--text-color);
-        background: url(images/sticky-bg-1-desktop.jpg);
+        background: url(sticky-bg-1-desktop.jpg);
         background-size: cover;
         left: 0%;
         right: 0%;
@@ -1040,7 +1040,7 @@ hr{
         position: absolute;
         font-family: poppins;
         color: var(--text-color);
-        background: url(images/sticky-bg-1-desktop.jpg);
+        background: url(sticky-bg-1-desktop.jpg);
         background-size: cover;
         left: 0%;
         right: 0%;
