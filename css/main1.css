@@ -1,0 +1,1113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+/*to make responsive for j7 -- (max-height:570px)*/
+/*declaring values*/
+:root{
+    --primary-color:#171717;
+    --peach-yellow:#ffcdac;
+    --text-color:aliceblue;
+    --text-color-hover:#ff8585;
+}
+
+/*removing not needed*/
+.navFullforMobile{
+    display: none;
+}
+.logoForMobile{
+    display: none;
+}
+.navLogo{
+    display: none;
+}
+.stickyBg hr{
+    display: none;
+}
+/* standard styling */
+#bodyScroll{
+    background: var(--primary-color);
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-stop: 1s;
+    background: var(--primary-color);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+/*nav styling*/
+.navFullForDesktop{
+    background: rgb(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    height: auto;
+    z-index: 10;
+}
+.navFullForDesktop img{
+    height: 50px;
+}
+.navFullForDesktop ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.8em;
+    position: absolute;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    right: 2%;
+    top: 5%;
+    font-family: poppins;
+}
+.navFullForDesktop ul li{
+    margin: 2px 1em 0em 1em;
+    transition: 0.2s;
+}
+.navFullForDesktop ul a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.navFullForDesktop ul a:hover{
+    color: var(--text-color-hover);
+    font-size: 1.2em;
+    text-shadow: 2px 2px #ff0000;
+}
+.navFullForDesktop ul li:hover{
+    margin-top: -2px;
+}
+.homeContentFull h1{
+    display: none;
+}
+.homeContentFull h2{
+    position: absolute;
+    top: 16%;
+    left: 9.8%;
+    font-family: poppins;
+    font-size: 5em;
+    color: white;
+}
+.homeContentFull h3{
+    font-family: poppins;
+    position: absolute;
+    color: var(--text-color);
+    top: 35%;
+    left: 10.1%;
+    right: 60%;
+    font-size: 2em;
+}
+.blueName{
+    color: var(--text-color-hover);
+    transition: 0.5s;
+}
+.blueName:hover{
+    font-size: 1.8em;
+    color: var(--text-color);
+}
+/*blob*/
+.illustration1 img{
+    max-height: 350px;
+    max-width: 350px;
+    position: absolute;
+    top: 20%;
+    right: 16%;
+    z-index: -1;
+}
+
+.socialMediaDesktop{
+    font-size: 2em;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+.socialMediaDesktop a{
+    color: var(--text-color);
+    transition: 1s;
+}
+.socialMediaDesktop a :hover{
+    color: rgb(146, 146, 146);
+}
+/*about us content*/
+.weWorkWith{
+    position: absolute;
+    top: 122%;
+    right: 6%;
+}
+.aboutUsContent h2{
+    font-size: 3em;
+    position: absolute;
+    top: 118%;
+    left: 10%;
+    right: 35%;
+    color: var(--text-color);
+    font-family: poppins;
+    transition: 1s; 
+    font-weight: 900;
+}
+
+.largeImage{
+    max-height: 82px;
+    margin-bottom: 3px;
+}
+
+.smallImage{
+    max-height: 90px;
+}
+.hrSideContent h2{
+    position: absolute;
+    top: 135%;
+    left: 10%;
+    font-size: 2.7em;
+    color: var(--peach-yellow);
+}
+.hrSideContent h3{
+    position: absolute;
+    left: 10%;
+    right: 40%;
+    top: 145%;
+    font-weight: 800;
+    opacity: 0.75;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+.stickyBg{
+    position: absolute;
+    top: 166%;
+    left: 0%;
+    background: url(images/sticky-bg-1-desktop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+.stickyBgContent{
+    color: var(--text-color);
+    font-family: poppins;
+    position: relative;
+    width: 100%;
+    height: 34em;
+}
+.stickyBgContent h1{
+    position: relative;
+    left: 10%;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    font-size: 2.5em;
+}
+.stickyBgContent p{
+    position: relative;
+    left: 10%;
+    margin-block-start: 0;
+    margin-right: 50%;
+    opacity: 0.75;
+    font-weight: 600;
+    font-size: 1.11em;
+}
+.extraContent p{
+    margin-block-end: 0em;
+}
+.contactUs{
+    position: absolute;
+    top: 243%;
+    left: 10%;
+}
+.contactUs h1{
+    left: 3em;
+    font-family: poppins;
+    font-size: 3em;
+    font-weight: 900;
+    color: var(--peach-yellow);
+    margin-block-start: 0.2em;
+    margin-block-end: 0.5em;
+}
+.contactUs form{
+    margin-left: 3px;
+}
+.contactUs form h2{
+    font-family: poppins;
+    font-size: 2em;
+    color: var(--text-color);
+    margin-block-start: 0.1em;
+    margin-block-end: 0.2em;
+}
+.contactUs form input{
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    background: transparent;
+    border: 0px solid;
+    outline: none;
+    border-bottom: 2px solid #ffcdac;
+    color: var(--text-color);
+    font-family: monospace;
+    font-size: 1.2em;
+}
+.contactUs form textarea{
+    background: transparent;
+    border: 0px solid;
+    outline: none;
+    border-bottom: 2px solid #ffcdac;
+    color: var(--text-color);
+    font-family: monospace;
+    font-size: 1.2em;
+    resize: none;
+}
+
+.contactUs form button{
+    margin-block-start: 0.5em;
+    font-family: poppins;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--text-color);
+    background: var(--primary-color);
+}
+.formWork{
+    width: 60em;
+    height: 5em;
+}
+.copyright{
+    display: flex;
+    position: absolute;
+    height: 8%;
+    width: 100%;
+    overflow-x: hidden;
+    top: 310%;
+    justify-content: center;
+    background: var(--text-color);
+    color: var(--primary-color);
+    left: 0%;
+    font-family: monospace;
+}
+/*display: none;*/
+hr{
+    display: none;
+}
+.contactUs form textarea::-webkit-scrollbar{
+    display: none;
+}
+@media(max-width:480px){
+    /*display : none;*/
+    .blob{
+        display: none;
+    }
+    .socialMediaDesktop{
+        display: none;
+    }
+    /*nav styling*/
+    .navFullForDesktop{
+        display: none;
+    }
+    .navFullforMobile{
+        display: flex;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--primary-color);
+        z-index: 2;
+        top: -100vh;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: 1s;
+    }
+    nav ul{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 30px;
+        color: var(--text-color);
+        padding: 10px;
+        letter-spacing: 5px;
+        font-family: poppins;
+        position: relative;
+    }
+
+    .closeIcon{
+        color: var(--text-color);
+        width: 25px;
+        position: absolute;
+        font-size: 2rem;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+
+    }
+    .navLogo{
+        display: flex;
+        color: var(--text-color);
+        position: absolute;
+        top: 4%;
+        right: 5%;
+        font-size: 1.5em;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 35px 0;
+
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    nav ul li a::after{
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: var(--peach-yellow);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.7s;
+    }
+    #themeChangeToDark{
+        display: none;
+    }
+    /*home page styling*/
+    .logoForMobile{
+        display: flex;
+    }
+    .logoForMobile img{
+        max-height: 2.8em;
+        position: absolute;
+        top: 2.5%;
+        left: -1%;
+    }
+    .homeContentFull h2{
+        color: var(--text-color);
+        font-family: poppins;
+        font-size: 3.5em;
+        position: absolute;
+        top: 28%;
+        left: 5%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+    .homeContentFull h3{
+        color: var(--text-color);
+        font-family: poppins;
+        font-size: 2.1em;
+        position: absolute;
+        top: 38%;
+        left: 5%;
+        right: 5%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+    .homeContentFull h3 .blueName{
+        color: #6bb7ff;
+    }
+    .socialMedia{
+        font-size: 2em;
+        position: absolute;
+        bottom: 5%;
+        justify-content: center;
+    }
+    .socialMedia a{
+        color: var(--text-color);
+        padding: 0 20px;
+        transition: 1s;
+    }
+    .socialMedia a :hover{
+        color: rgb(146, 146, 146);
+    }
+    .illustration1{
+        display: flex;
+    }
+    .illustration1 img{
+       /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0 89%);
+       clip-path: polygon(0 0, 100% 0, 100% 83%, 0 89%);*/
+        max-height: 300px;
+        max-width: auto;
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        z-index: -1;
+        opacity: 0.9;
+        display: flex;
+    }
+    .aboutUsContent{
+        display: flex;
+    }
+    hr{
+        display: flex;
+    }
+    .aboutUsh2{
+        font-size: 20em;
+    }
+    .aboutUsContent h2{
+        font-size: 2.2rem;
+        color: var(--text-color);
+        font-family: poppins;
+        position: absolute;
+        top: 110%;
+        right: 5%;
+        left: 5%;
+    }
+    .weWorkWith{
+        position: absolute;
+        top: 129%;
+        left: 5%;
+        right: 0%;
+    }
+    .weWorkWith img{
+        margin-right: 4em;
+        margin-top: 1em;
+        opacity: 0.7;
+    }
+
+    .firstHr{
+        position: absolute;
+        width: 75%;
+        top: 110%;
+        height: 0.5%;
+        left: 4%;
+        background: var(--text-color);
+        opacity: 0.7;
+    }
+    .hrSideContent h2{
+        position: absolute;
+        top: 158.5%;
+        left: 5%;
+        color: #6bb7ff;
+        display: flex;
+        font-size: 2em;
+    }
+    .hrSideContent h3{
+        position: absolute;
+        top: 166%;
+        left: 5%;
+        right: 10%;
+        color: var(--text-color);
+        font-size: 1.25em;
+        font-family: poppins;
+        transition: 0.5s;
+    }
+    .stickyBg{
+        position: absolute;
+        font-family: poppins;
+        color: var(--text-color);
+        background: url(images/sticky-bg-1.jpg);
+        background-size: cover;
+        left: 0%;
+        right: 0%;
+        top: 195%;
+        min-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .stickyBgContent{
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 100%;
+        left: -3%;
+    }
+    .stickyBgContent h1{
+        font-size: 1.5em;
+        margin-left: 0%;
+        margin-block-start: 1.7em;
+        margin-inline-start: 0em;
+    }
+    .stickyBgContent p{
+        font-size: 1em;
+        right: 20%;
+        margin-left: 0%;
+        margin-right: 15%;
+        margin-block-start: 0.2em;
+    }
+    .contactUs{
+        position: absolute;
+        top: 310%;
+        font-family: poppins;
+        display: block;
+    }
+    .contactUs h1{
+        color: var(--text-color);
+        text-decoration: underline var(--peach-yellow) 5px;
+        margin-left: 5%;
+    }
+    .contactUs form{
+        color: var(--text-color);
+        margin-left: 5%;
+    }
+    .contactUs input{
+        border-bottom: 5px solid var(--peach-yellow);
+        color: var(--text-color);
+        background: none;
+        margin-bottom: 10%;
+    }
+    .contactUs h2{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+    .contactUs button{
+        font-family: poppins;
+        background: var(--primary-color);
+        color: var(--peach-yellow);
+        border-radius: 0px 10px 10px 0px;
+        width: 100px;
+        font-size: 1em;
+    }
+    .copyright{
+        display: flex;
+    }
+    .copyright h1{
+        font-size: 1.5em;
+        font-family: monospace;
+    }
+    .contactUs h1{
+        font-size: 2.5em;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .contactUs form{
+        margin-left: 0px;
+    }
+    .contactUs form h2{
+        font-size: 1.6em;
+        margin-right: 5px;
+    }
+    .contactUs textarea{
+        width: 90%;
+    }
+    .contactUs form button{
+        margin-left: 0px;
+    } 
+    .contactUs{
+        top: 293%;
+    }
+    .copyright{
+        position: absolute;
+        top: 365%;
+    }
+}
+/*iphone x*/
+@media(max-width: 322px){
+    .logoForMobile img{
+        top: 3%;
+        max-height: 2.2em;
+    }
+    .weWorkWith{
+        top: 125%;
+    }
+    .weWorkWith img{
+        margin-right: 1em;
+    }
+    .homeContentFull h2{
+        top: 23%;
+    }
+    .homeContentFull h3{
+        top: 34%;
+        font-size: 1.6em;
+        left: 5.8%;
+    }
+    .illustration1 img{
+        max-height: 15em;
+    }
+    .aboutUsContent h2{
+        font-size: 1.7em;
+        left: 5.8%;
+        font-weight: 900;
+    }
+    .aboutUsh2{
+        font-size: 1em;
+    }
+    .aboutUsContent h3{
+        font-weight: 700;
+        left: 6%;
+        font-size: 1.08em;
+        opacity: 1;
+    }
+    .stickyBg{
+        top: 197%;
+    }
+    .stickyBgContent h1{
+        margin-block-start: 2em;
+    }
+    .stickyBgContent p{
+        margin-block-start: 1em;
+    }
+    .extraContent{
+        display: none;
+    }
+    .contactUs h1{
+        font-size: 2.5em;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .contactUs form{
+        margin-left: 0px;
+    }
+    .contactUs form h2{
+        font-size: 1.6em;
+        margin-right: 5px;
+    }
+    .contactUs textarea{
+        width: 90%;
+    }
+    .contactUs form button{
+        margin-left: 0px;
+    } 
+    .copyright{
+        position: absolute;
+        top: 375%;
+    }
+}
+
+/*safed phone ke liye*/
+@media (max-height:570px){
+    .contactUs{
+        top: 310%;
+    }
+    .contactUs h1{
+        font-size: 2.5em;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .contactUs form{
+        margin-left: 0px;
+    }
+    .contactUs form h2{
+        font-size: 1.6em;
+        margin-right: 5px;
+    }
+    .contactUs textarea{
+        width: 90%;
+    }
+    .contactUs form button{
+        margin-left: 0px;
+    } 
+    .aboutUsh2{
+        font-size: 0.9em;
+    }
+    hr{
+        display: flex;
+    }
+    .homeContentFull h2{
+        top: 23%;
+    }
+    .homeContentFull h3{
+        top: 37%;
+    }
+    .illustration1 img{
+        top: 55%;
+    }
+    .aboutUsContent h2{
+        font-size: 2em;
+    }
+    .hrSideContent h2{
+        font-size: 2em;
+    }
+    .weWorkWith{
+        position: absolute;
+        top: 132%;
+        right: 0%;
+        left: 5%;
+        display: flexbox;
+        opacity: 0.5;
+    }
+    .weWorkWith img{
+        margin-left: 0px;
+        margin-right: 1.5em;
+    }
+    .hrSideContent h2{
+        top: 170%;
+    }
+    .hrSideContent h3{
+        top: 180%;
+    }
+    .stickyBg{
+        top: 215%;
+    }
+    .stickyBgContent h1{
+        margin-block-start: 1em;
+    }
+    .extraContent{
+        display: none;
+    }
+    .copyright{
+        position: absolute;
+        top: 400%;
+        left: 0%;
+        right: 0%;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        left: 0%;
+    }
+}
+/*medium width tab 👇*/
+@media(min-width :751px) and (max-width: 950px){
+    .socialMediaDesktop{
+        display: none;
+    }
+    .navFullForDesktop{
+        display: none;
+    }
+    /*navigation 👇*/
+    .navFullforMobile{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--primary-color);
+        z-index: 2;
+        top: -100vh;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: 1s;
+    }
+    nav ul{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 30px;
+        color: var(--text-color);
+        padding: 10px;
+        letter-spacing: 5px;
+        font-family: poppins;
+        position: relative;
+    }
+
+    .closeIcon{
+        color: var(--text-color);
+        width: 25px;
+        position: absolute;
+        font-size: 2rem;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+
+    }
+    .navLogo{
+        display: flex;
+        color: var(--text-color);
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        font-size: 1.8em;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 35px 0;
+
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    nav ul li a::after{
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: var(--peach-yellow);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.7s;
+    }
+    .socialMedia{
+        font-size: 2em;
+        position: absolute;
+        bottom: 5%;
+        justify-content: center;
+    }
+    .socialMedia a{
+        color: var(--text-color);
+        padding: 0 20px;
+        transition: 1s;
+    }
+    /*home page 👇*/
+    .logoForMobile{
+        display: block;   
+    }
+    .logoForMobile img{
+        max-height: 3em;
+    }
+    .homeContentFull h2{
+        left: 5%;
+    }
+    .homeContentFull h3{
+        left: 5%;
+        right: 25%;
+        font-size: 2.2em;
+    }
+    .illustration1 img{
+        top: 60%;
+        left: 5%;
+    }
+    .weWorkWith{
+        opacity: 0.8;
+        top: 139%;
+        left: 5%;
+    }
+    .aboutUsContent h2{
+        top: 149%;
+        left: 5.5%;
+    }
+    .aboutUsContent h3{
+        top: 159%;
+        left: 5.5%;
+    }
+    .aboutUsh2 h2{
+        top: 110%;
+        left: 5%;
+        right:20%;
+    }
+    .stickyBg{
+        position: absolute;
+        font-family: poppins;
+        color: var(--text-color);
+        background: url(images/sticky-bg-1-desktop.jpg);
+        background-size: cover;
+        left: 0%;
+        right: 0%;
+        top: 185%;
+        min-height: 80%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .stickyBgContent h1{
+        left: 5%;
+    }
+    .stickyBgContent p{
+        left: 5%;
+        right: 0%;
+        margin-right: 7em;
+    }
+    .contactUs{
+        top: 265%;
+        left: 5%;
+    }
+    .contactUs textarea{
+        width: 40em;
+    }
+    .copyright{
+        top: 335%;
+    }
+}
+/*tab 1*/
+@media(max-width : 750px) and ( min-width :481px){
+    /*Display None👇*/
+    .navFullForDesktop{
+        display: none;
+    }
+    .socialMediaDesktop{
+        display: none;
+    }
+    
+    /*navigation bar👇*/
+    .navFullforMobile{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--primary-color);
+        z-index: 2;
+        top: -100vh;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: 1s;
+    }
+    nav ul{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 30px;
+        color: var(--text-color);
+        padding: 10px;
+        letter-spacing: 5px;
+        font-family: poppins;
+        position: relative;
+    }
+
+    .closeIcon{
+        color: var(--text-color);
+        width: 25px;
+        position: absolute;
+        font-size: 2rem;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+
+    }
+    .navLogo{
+        display: flex;
+        color: var(--text-color);
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        font-size: 1.8em;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 35px 0;
+
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    nav ul li a::after{
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: var(--peach-yellow);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.7s;
+    }
+    .socialMedia{
+        font-size: 2em;
+        position: absolute;
+        bottom: 5%;
+        justify-content: center;
+    }
+    .socialMedia a{
+        color: var(--text-color);
+        padding: 0 20px;
+        transition: 1s;
+    }
+    /*home page👇*/
+    .logoForMobile{
+        display: block;
+    }
+    .logoForMobile img{
+        max-height: 3em;
+    }
+    .homeContentFull h2{
+        font-size: 5em;
+        left: 5%;
+    }
+    .homeContentFull h3{
+        top: 35%;
+        right: 20%;
+        left: 5.5%;
+    }
+    .illustration1 img{
+        top: 55%;
+        left: 5%;
+    }
+    .aboutUsh2 h2{
+        top: 115%;
+        right: 20%;
+        left: 5%;
+    }
+    .weWorkWith{
+        top: 140%;
+        left: 5%;
+        opacity: 0.8;
+    }
+    .hrSideContent h2{
+        top: 150%;
+        left: 5%;
+    }
+    .hrSideContent h3{
+        top: 160%;
+        left: 5%;
+        right: 20%;
+    }
+    .stickyBg{
+        position: absolute;
+        font-family: poppins;
+        color: var(--text-color);
+        background: url(images/sticky-bg-1-desktop.jpg);
+        background-size: cover;
+        left: 0%;
+        right: 0%;
+        top: 195%;
+        min-height: 90%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .stickyBgContent h1{
+        left: 5%;
+    }
+    .stickyBgContent p{
+        left: 5%;
+        right: 0%;
+        margin-right: 7em;
+    }
+    .contactUs{
+        top: 285%;
+        left: 5%;
+    }
+    .contactUs textarea{
+        width: 30em;
+    }
+    .copyright{
+        top: 350%;
+    }
+}
+
+/*Horizontal tab👇*/
+@media(max-width : 1100px) and (min-width :950px) and (max-height :700px){
+    .homeContentFull h3{
+        top: 39%;
+    }
+    .aboutUsh2 h2{
+        right:40%;
+        top: 116%;
+        font-weight: 900;
+        font-size: 2.3em;
+    }
+    .aboutUsContent img{
+        opacity: 0.8;
+    }
+    .hrSideContent h2{
+        font-size: 2.5em;
+        top: 140%;
+    }
+    .hrSideContent h3{
+        top: 152%;
+        font-size: 1.4em;
+    }
+    .stickyBg{
+        top: 180%;
+        height: 115%;
+    }
+    .contactUs{
+        top: 295%;
+    }
+    .contactUs textarea{
+        width: 40em;
+    }
+    .contactUs form button{
+        margin-left: 0px;
+    }
+    .copyright{
+        top: 385%;
+        right: 0%;
+        height: 10%;
+    }
+}

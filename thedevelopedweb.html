@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , />
+    <title>thedevelopedweb</title>
+    <link rel="stylesheet" href="css/main1.css" />
+    <script
+      src="https://kit.fontawesome.com/79b62afffe.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+  </head>
+  <body>
+    <nav id="menu">
+      <div class="navFullforMobile">
+        <div class="closeIcon" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul>
+          <li><a href="#homeContentFull" onclick="closeMenu()">HOME</a></li>
+          <li><a href="#aboutUsContent" onclick="closeMenu()">ABOUT US</a></li>
+          <li><a href="#contactUs" onclick="closeMenu()">CONTACT US</a></li>
+        </ul>
+        <div class="socialMedia">
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://codepen.io/"><i class="fab fa-codepen"></i></a>
+        </div>
+      </div>
+      <div class="navFullForDesktop">
+        <img
+          src="images/thedevelopedweb.png"
+          alt=""
+        />
+        <ul>
+          <li><a href="#homeContentFull">Home</a></li>
+          <li><a href="#weWorkWith">About Us</a></li>
+          <li><a href="#contactUs">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="navLogo" onclick="openMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="homeContentFull" id="homeContentFull">
+      <div class="logoForMobile">
+        <img
+          src="images/thedevelopedweb.png"
+          alt=""
+        />
+      </div>
+      <h2>Hola!</h2>
+      <h3>
+        I'm<span class="blueName" id="blueName"> Dev</span>; a Front-End
+        developer.
+      </h3>
+      <div class="illustration1">
+        <img
+          src="https://blush.design/api/download?shareUri=8qufoCuJ5Ogigmxr&c=Hair_0%7E1c1c2b_Skin_0%7Ed8936c&w=800&h=800&fm=png"
+          alt=""
+        />
+      </div>
+      <div class="socialMediaDesktop">
+        <a href="https://www.instagram.com/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <br />
+        <br />
+        <br />
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <br />
+        <br />
+        <br />
+        <a href="https://codepen.io/"><i class="fab fa-codepen"></i></a>
+      </div>
+    </div>
+    <hr class="firstHr" />
+    <div id="jumpToAboutUs">
+      <div class="aboutUsContent" id="aboutUsContent">
+        <div class="aboutUsh2"><h2>We would love to work with you!</h2></div>
+        <div class="weWorkWith" id="weWorkWith">
+          <img src="images/html.png" alt="HTML" class="smallImage" />
+          <img src="images/css.png" alt="CSS" class="largeImage" />
+          <img src="images/javascript.png" alt="JS" class="smallImage" />
+          <img src="images/python.png" alt="PYTHON" class="largeImage" />
+        </div>
+        <div class="hrSideContent">
+          <h2>How it works?</h2>
+          <h3 id="hrSideContent">
+            We provide you with amazing options for web development, web
+            designing and eCommerce. Also, we provide you with YouTube SEO
+            services.
+          </h3>
+        </div>
+        <div class="stickyBg">
+          <div class="stickyBgContent">
+            <h1>Web Development</h1>
+            <p>
+              Website marketing strategy is no longer optional but ‘must have’
+              for the businesses who want to survive in the highly competitive
+              online market. If you want to be a competent, then we are here to
+              make a well designed responsive website for you.
+            </p>
+            <hr class="thirdHr" />
+            <h1>Web Designing</h1>
+            <p>
+              Web designing refers only to design the website rather than to
+              make it function. We have an expertise in web designing and may
+              help you to beautifully design your website.
+            </p>
+            <div class="extraContent">
+              <hr class="thirdHr" />
+              <h1>Ecommerce</h1>
+              <p>
+                It is a great way for stores, organization and brand to tap into
+                the growing power. And, the good things is that we are here to
+                help you create your eCommerce website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contactUs" id="contactUs">
+      <div class="containerHalf">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="containerHalf">
+        <form>
+          <div class="formContent">
+            <h2>Name</h2>
+            <input type="text" class="formName" />
+            <h2>E-Mail</h2>
+            <input type="text" class="formEmail" />
+            <h2>Describe your work</h2>
+            <textarea class="formWork" cols="30" rows="10"></textarea>
+            <br>
+            <button class="submitBtn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        <h1>© thedevelopedweb</h1>
+      </div>
+    </footer>
+    <script src="js/main1.js"></script>
+  </body>
+</html>
